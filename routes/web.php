@@ -6,8 +6,8 @@ use App\Http\Controllers\test\TestController;
 
 Route::namespace('App\Http\Controllers\web')->group(function () {
     Route::controller('LoginController')->group(function() {
-        Route::get('/login','show')->name('login');
-        Route::post('/login','submit')->name('login.submit');
+        Route::get('/','show')->name('login');
+        Route::post('/','submit')->name('login.submit');
     });
 });
 
@@ -16,6 +16,6 @@ Route::middleware('auth.api')->group(function () {
         ->name('test.index');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });

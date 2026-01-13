@@ -4,6 +4,7 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 export default {
     content: [
         './resources/views/**/*.blade.php',       // All Blade files
+        './resources/css/**/*.css',                 // CSS files
         './resources/js/**/*.js',                 // JS files
         './storage/framework/views/**/*.php',     // Cached views
     ],
