@@ -1,0 +1,139 @@
+@import "./custom.css";
+
+@layer components {
+    /* =====================
+       LOGIN CONTAINER
+    ====================== */
+    .login-container {
+        @apply relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-blue-1 to-blue-2 to-90%;
+    }
+
+    .login-container::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url('../../public/assets/images/login/login-bg.webp') no-repeat center / cover;
+        opacity: 0.9;
+        z-index: 10;
+    }
+
+    .login-container > * {
+        position: relative;
+        z-index: 20;
+    }
+
+    .container {
+        @apply flex flex-row items-center justify-center gap-20 p-0 max-h-full max-w-[1270px] w-full;
+    }
+
+    /* =====================
+       LOGIN LEFT
+    ====================== */
+    .login-left {
+        @apply flex flex-col items-start justify-center gap-15 p-5 pr-10 w-[550px] max-h-full;
+    }
+
+    .login-left .main-logo {
+        @apply w-[80px] h-[80px];
+    }
+
+    .login-left .login-left-text {
+        @apply flex flex-col justify-around items-start gap-60 text-white font-poppins font-semibold;
+    }
+
+    .login-left .login-left-header {
+        @apply text-xlarge leading-60;
+    }
+
+    .login-left .login-left-subheader {
+        @apply max-w-[400px] w-full block text-xxlarge leading-80 font-bold
+               bg-clip-text text-transparent
+               bg-gradient-to-r from-[#E4B9FD] from-23%
+               via-[#26AAE1] via-61%
+               to-[#9542C5] to-90%;
+    }
+
+    .login-left p {
+        @apply font-montserrat text-tiny leading-25 font-medium;
+    }
+
+    .login-left p span {
+        @apply block;
+    }
+
+    /* =====================
+       LOGIN RIGHT
+    ====================== */
+    .login-right {
+        @apply relative flex flex-col items-start justify-center gap-6 bg-light-3 min-h-screen p-30;
+    }
+
+    .login-right::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -370px;
+        width: 370px;
+        height: 100%;
+        background: var(--color-light-3);
+        z-index: 5;
+    }
+
+    .login-right .login-right-header {
+        @apply text-large font-bold leading-45;
+    }
+
+    .login-right .login-right-header span {
+        @apply block;
+    }
+
+    /* =====================
+       LOGIN FORM
+    ====================== */
+    .login-form {
+        @apply flex flex-col items-start justify-center gap-10 w-full font-montserrat z-10;
+    }
+
+    .login-form p {
+        @apply text-xtiny text-dark-2 font-medium leading-25;
+    }
+
+    .login-form form {
+        @apply flex flex-col items-start justify-center gap-10 w-full;
+    }
+
+    .login-form .input-form {
+        @apply relative w-full;
+    }
+
+    .login-form .input-form input {
+        @apply w-full border-b-1 border-dark-4 leading-25
+               text-dark-1 text-xxsmall font-normal outline-none;
+    }
+
+    .login-form .input-form input:focus + label,
+    .login-form .input-form input:valid + label,
+    .login-form .input-form input:-internal-autofill-selected + label {
+        @apply -top-4 text-blue-2 text-xtiny bg-transparent leading-18;
+    }
+
+    .login-form .input-form label {
+        @apply absolute left-1 top-0 -z-1
+               text-dark-3 text-xxsmall leading-25 font-medium
+               transition-all duration-700 ease-in-out;
+    }
+
+    .login-form .input-form button {
+        @apply relative block w-full p-3 text-center uppercase
+               bg-blue-2 text-light-3 font-bold
+               rounded-lg z-10 cursor-pointer;
+    }
+
+    .login-form .input-form button:hover {
+        @apply bg-blue-1 transition-colors duration-300;
+    }
+
+    .login-form small {
+        @apply text-xtiny text-dark-2 font-medium leading-18;
+    }
+}

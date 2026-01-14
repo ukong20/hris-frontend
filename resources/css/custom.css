@@ -1,17 +1,108 @@
+@import "tailwindcss";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@layer theme, components, utilitis;
 
-:root {
+@theme {
     --font-poppins: "Poppins", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    --text-xxlarge: 67px;
+    --text-xlarge: 50px;
+    --text-large: 37px;
+    --text-medium: 28px;
+    --text-small: 21px;
+    --text-xsmall: 18px;
+    --text-xxsmall: 16px;
+    --text-tiny: 14px;
+    --text-xtiny: 12px;
+
+    --leading-80: 80px;
+    --leading-60: 60px;
+    --leading-52: 52px;
+    --leading-45: 45px;
+    --leading-36: 36px;
+    --leading-30: 30px;
+    --leading-25: 25px;
+    --leading-18: 18px;
     
+    --spacing: 0.25rem;
+
+    --color-dark-1: #000000;
+    --color-dark-2: #444050;
+    --color-dark-3: #6D6B77;
+    --color-dark-4: #C8C9D0;
+    --color-light-1: #DBDCE5;
+    --color-light-2: #FAF6FF;
+    --color-light-3: #FFFFFF;
+    --color-purple-1: #513AA3;
+    --color-purple-2: #743EB4;
+    --color-purple-3: #8B57A9;
+    --color-purple-4: #DEC2FF;
+    --color-blue-1: #00042B;
+    --color-blue-2: #2D3691;
+    --color-blue-3: #00BAD1;
+    --color-green-1: #28C76F;
+    --color-red-1: #FF5C5C;
 }
 
-@layer theme {
-    * {
+/* Move all your base styles and resets here */
+@layer base {
+    *, ::after, ::before, ::backdrop, ::file-selector-button {
         padding: 0;
         margin: 0;
         border: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        line-height: 1.5;
+        font-family: var(--font-poppins);
+        scroll-behavior: smooth;
+        overflow: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    b, strong {
+        font-weight: bolder;
+    }
+
+    sub, sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub { bottom: -0.25em; }
+    sup { top: -0.5em; }
+
+    table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+    }
+}
+
+@layer components {
+    .container {
+        margin: 0 auto;
+        padding: 30px 15px;
     }
 }
