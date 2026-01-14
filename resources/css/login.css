@@ -22,7 +22,7 @@
         z-index: 20;
     }
 
-    .container {
+    .wrapper {
         @apply flex flex-row items-center justify-center gap-20 p-0 max-h-full max-w-[1270px] w-full;
     }
 
@@ -30,7 +30,7 @@
        LOGIN LEFT
     ====================== */
     .login-left {
-        @apply flex flex-col items-start justify-center gap-15 p-5 pr-10 w-[550px] max-h-full;
+        @apply flex flex-col items-start justify-center gap-15 p-5 max-h-full w-[450px] lg:pr-10 xl:w-[550px];
     }
 
     .login-left .main-logo {
@@ -42,15 +42,11 @@
     }
 
     .login-left .login-left-header {
-        @apply text-xlarge leading-60;
+        @apply text-medium leading-36 lg:text-large lg:leading-52 xl:text-xlarge xl:leading-60;
     }
 
     .login-left .login-left-subheader {
-        @apply max-w-[400px] w-full block text-xxlarge leading-80 font-bold
-               bg-clip-text text-transparent
-               bg-gradient-to-r from-[#E4B9FD] from-23%
-               via-[#26AAE1] via-61%
-               to-[#9542C5] to-90%;
+        @apply w-full block font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#E4B9FD] from-23% via-[#26AAE1] via-61% to-[#9542C5] to-90% max-w-[210px] text-large leading-52 lg:text-xlarge lg:leading-60 lg:max-w-[400px] xl:text-xxlarge xl:leading-80;
     }
 
     .login-left p {
@@ -65,7 +61,7 @@
        LOGIN RIGHT
     ====================== */
     .login-right {
-        @apply relative flex flex-col items-start justify-center gap-6 bg-light-3 min-h-screen p-30;
+        @apply relative flex flex-col items-start justify-center gap-6 bg-light-3 min-h-fit p-10 lg:p-20 lg:min-h-screen xl:p-30;
     }
 
     .login-right::after {
@@ -77,10 +73,12 @@
         height: 100%;
         background: var(--color-light-3);
         z-index: 5;
+
+        @apply md:block hidden;
     }
 
     .login-right .login-right-header {
-        @apply text-large font-bold leading-45;
+        @apply font-bold text-medium leading-36 xl:text-large xl:leading-45;
     }
 
     .login-right .login-right-header span {
@@ -107,8 +105,7 @@
     }
 
     .login-form .input-form input {
-        @apply w-full border-b-1 border-dark-4 leading-25
-               text-dark-1 text-xxsmall font-normal outline-none;
+        @apply w-full border-b-1 border-dark-4 leading-25 text-dark-1 text-xxsmall font-normal outline-none;
     }
 
     .login-form .input-form input:focus + label,
@@ -118,15 +115,11 @@
     }
 
     .login-form .input-form label {
-        @apply absolute left-1 top-0 -z-1
-               text-dark-3 text-xxsmall leading-25 font-medium
-               transition-all duration-700 ease-in-out;
+        @apply absolute left-1 top-0 -z-1 text-dark-3 text-xxsmall leading-25 font-medium transition-all duration-700 ease-in-out;
     }
 
     .login-form .input-form button {
-        @apply relative block w-full p-3 text-center uppercase
-               bg-blue-2 text-light-3 font-bold
-               rounded-lg z-10 cursor-pointer;
+        @apply relative block w-full p-3 text-center uppercase bg-blue-2 text-light-3 font-bold rounded-lg z-10 cursor-pointer;
     }
 
     .login-form .input-form button:hover {

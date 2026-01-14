@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="login-container">
-      <div class="container">
+      <div class="wrapper">
         <div class="login-left">
           <div class="main-logo">
             {{-- to enhance for tenancy --}}

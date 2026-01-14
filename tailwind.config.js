@@ -9,11 +9,16 @@ export default {
         './storage/framework/views/**/*.php',     // Cached views
     ],
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
+        screens: {
+        // Default breakpoints:
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1200px',
+        '2xl': '1536px',
+        '3xl': '1920px' // 👈 Add this for extra large screens
         },
+        extend: {},
     },
     plugins: [],
 };
