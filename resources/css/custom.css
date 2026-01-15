@@ -66,13 +66,13 @@
         line-height: 1.5;
         font-family: var(--font-poppins);
         scroll-behavior: smooth;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     body {
         max-width: 1920px;
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     h1, h2, h3, h4, h5, h6 {

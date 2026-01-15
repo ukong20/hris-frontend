@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @vite('resources/css/login.css')
+    <link rel="icon" href="{{ asset('assets/images/logix-bpo.webp') }}" type="image/webp">
+    @vite(['resources/css/login.css', 'resources/js/login.js'])
 
     <title>LogixBPO HRIS</title>
   </head>
@@ -24,6 +25,7 @@
               <p>© 2025 Logix BPO PTY LTD & Logix BPO Managed Services Philippines INC. <span>All Rights Reserved.</span></p>
           </div>
         </div>
+        <div class="login-right-wrap"></div>
         <div class="login-right">
           <h2 class="login-right-header"> Welcome to <span>Logix HRIS Portal</span> </h2>
           <div class="login-form">
@@ -32,11 +34,11 @@
               @csrf
 
               <div class="input-form">
-                <input type="email" name="email" required>
+                <input type="email" name="email" placeholder=" " required>
                 <label for="email">Email</label>
               </div>
               <div class="input-form">
-                <input type="password" name="password" required>
+                <input type="password" name="password" placeholder=" " required>
                 <label for="password">Password</label>
               </div>
               <div class="input-form">
@@ -54,4 +56,5 @@
       </div>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 </html>

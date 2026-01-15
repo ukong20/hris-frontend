@@ -1,6 +1,14 @@
 @import "./custom.css";
 
 @layer components {
+
+    html {
+        @apply md:overflow-hidden overflow-x-hidden;
+    }
+
+    body {
+        @apply md:overflow-hidden overflow-y-scroll;
+    }
     /* =====================
        LOGIN CONTAINER
     ====================== */
@@ -23,14 +31,14 @@
     }
 
     .wrapper {
-        @apply flex flex-row items-center justify-center gap-20 p-0 max-h-full max-w-[1270px] w-full;
+        @apply flex flex-row items-center justify-center p-0 max-h-full max-w-[1270px] w-full gap-0 md:!gap-10 lg:gap-20;
     }
 
     /* =====================
        LOGIN LEFT
     ====================== */
     .login-left {
-        @apply flex flex-col items-start justify-center gap-15 p-5 max-h-full w-[450px] lg:pr-10 xl:w-[550px];
+        @apply flex flex-col items-center justify-center p-3 gap-15 max-h-full w-[500px] md:items-start md:p-20 md:!pr-0 lg:pr-10 xl:w-[550px] xl:p-5;
     }
 
     .login-left .main-logo {
@@ -38,7 +46,11 @@
     }
 
     .login-left .login-left-text {
-        @apply flex flex-col justify-around items-start gap-60 text-white font-poppins font-semibold;
+        @apply flex flex-col justify-around items-center text-white font-poppins font-semibold gap-10 md:items-start md:gap-60;
+    }
+
+    .login-left .login-left-text-inner {
+        @apply flex flex-col items-center md:items-start
     }
 
     .login-left .login-left-header {
@@ -61,7 +73,7 @@
        LOGIN RIGHT
     ====================== */
     .login-right {
-        @apply relative flex flex-col items-start justify-center gap-6 bg-light-3 min-h-fit p-10 lg:p-20 lg:min-h-screen xl:p-30;
+        @apply relative flex flex-col items-start justify-center gap-6 bg-light-3 min-h-fit p-10 w-full sm:w-[500px] md:min-h-screen lg:w-[620px] lg:p-20 xl:p-30;
     }
 
     .login-right::after {
@@ -78,7 +90,7 @@
     }
 
     .login-right .login-right-header {
-        @apply font-bold text-medium leading-36 xl:text-large xl:leading-45;
+        @apply font-bold text-medium text-dark-2 leading-36 xl:text-large xl:leading-45;
     }
 
     .login-right .login-right-header span {
@@ -109,13 +121,14 @@
     }
 
     .login-form .input-form input:focus + label,
-    .login-form .input-form input:valid + label,
+    .login-form .input-form input:not(:placeholder-shown) + label,
+    /* .login-form .input-form input:valid + label, */
     .login-form .input-form input:-internal-autofill-selected + label {
-        @apply -top-4 text-blue-2 text-xtiny bg-transparent leading-18;
+        @apply -top-5 text-blue-2 text-xtiny bg-transparent leading-18;
     }
 
     .login-form .input-form label {
-        @apply absolute left-1 top-0 -z-1 text-dark-3 text-xxsmall leading-25 font-medium transition-all duration-700 ease-in-out;
+        @apply absolute left-0 top-0 -z-1 text-dark-3 text-xxsmall leading-25 font-medium transition-all duration-700 ease-in-out;
     }
 
     .login-form .input-form button {
