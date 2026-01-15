@@ -35,6 +35,7 @@ class LoginController extends BaseController
         session()->put('api_token', $token);
         $request->session()->regenerate();
 
-        return redirect()->route('test.index');
+        // return redirect()->route('test.index');
+        return redirect('/dashboard');
     }
 }

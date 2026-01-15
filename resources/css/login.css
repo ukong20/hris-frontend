@@ -124,7 +124,7 @@
     .login-form .input-form input:not(:placeholder-shown) + label,
     /* .login-form .input-form input:valid + label, */
     .login-form .input-form input:-internal-autofill-selected + label {
-        @apply -top-5 text-blue-2 text-xtiny bg-transparent leading-18;
+        @apply -top-5 border-blue-2 text-blue-2 text-xtiny bg-transparent leading-18;
     }
 
     .login-form .input-form label {

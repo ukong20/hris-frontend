@@ -12,8 +12,9 @@ Route::namespace('App\Http\Controllers\web')->group(function () {
 });
 
 Route::middleware('auth.api')->group(function () {
-    Route::get('/test', [TestController::class, 'index'])
-        ->name('test.index');
+    Route::view('/dashboard', 'layouts.dashboard');
+    // Route::get('/test', [TestController::class, 'index'])
+    //     ->name('test.index');
 });
 
 // Route::get('/', function () {

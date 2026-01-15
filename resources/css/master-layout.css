@@ -1,0 +1,11 @@
+@import "./custom.css";
+
+@layer components {
+    html {
+        @apply md:overflow-x-hidden overflow-x-hidden;
+    }
+
+    body {
+        @apply md:overflow-x-hidden overflow-y-scroll bg-light-4;
+    }
+}

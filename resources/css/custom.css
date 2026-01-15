@@ -35,13 +35,14 @@
     
     --spacing: 0.25rem;
 
-    --color-dark-1: #000000;
+    --color-dark-1: #2B2B2B;
     --color-dark-2: #444050;
     --color-dark-3: #6D6B77;
     --color-dark-4: #C8C9D0;
     --color-light-1: #DBDCE5;
     --color-light-2: #FAF6FF;
     --color-light-3: #FFFFFF;
+    --color-light-4: #F8F7FA;
     --color-purple-1: #513AA3;
     --color-purple-2: #743EB4;
     --color-purple-3: #8B57A9;
@@ -51,6 +52,16 @@
     --color-blue-3: #00BAD1;
     --color-green-1: #28C76F;
     --color-red-1: #FF5C5C;
+
+    --round-3: 3px;
+    --round-6: 6px;
+    --round-8: 8px;
+    --round-12: 12px;
+    --round-16: 16px;
+    --round-20: 20px;
+    --round-24: 24px;
+    --round-30: 30px;
+    --round-50: 50px;
 }
 
 /* Move all your base styles and resets here */
@@ -109,6 +120,7 @@
 @layer components {
     .wrapper {
         margin: 0 auto;
-        padding: 30px 15px;
+        max-width: 1270px;
+        width: 100%;
     }
 }
