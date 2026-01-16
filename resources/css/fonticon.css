@@ -1,0 +1,55 @@
+@font-face {
+font-family: 'fonticon';
+src: url("../fonts/fonticon.ttf") format("truetype"),
+url("../fonts/fonticon.eot") format("embedded-opentype"),
+url("../fonts/fonticon.woff") format("woff");
+unicode-range: U+EA01-EA28;
+}
+.ico {
+    font-family: 'fonticon' !important;
+    font-size: 18px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-users-add:before { content: "\ea01"; }
+.ico-case:before { content: "\ea02"; }
+.ico-info:before { content: "\ea03"; }
+.ico-sun:before { content: "\ea04"; }
+.ico-bell:before { content: "\ea05"; }
+.ico-cake:before { content: "\ea06"; }
+.ico-popper:before { content: "\ea07"; }
+.ico-hour-glass:before { content: "\ea08"; }
+.ico-user-add:before { content: "\ea09"; }
+.ico-note:before { content: "\ea0a"; }
+.ico-support:before { content: "\ea0b"; }
+.ico-message:before { content: "\ea0c"; }
+.ico-calendar-time:before { content: "\ea0d"; }
+.ico-clock-cancel:before { content: "\ea0e"; }
+.ico-credits:before { content: "\ea0f"; }
+.ico-clock-edit:before { content: "\ea10"; }
+.ico-calendar:before { content: "\ea11"; }
+.ico-eye:before { content: "\ea12"; }
+.ico-delete:before { content: "\ea13"; }
+.ico-plus:before { content: "\ea14"; }
+.ico-hexagon:before { content: "\ea15"; }
+.ico-user:before { content: "\ea16"; }
+.ico-user-status:before { content: "\ea17"; }
+.ico-user-search:before { content: "\ea18"; }
+.ico-user-profile:before { content: "\ea19"; }
+.ico-time-off:before { content: "\ea1a"; }
+.ico-calendar-heart:before { content: "\ea1b"; }
+.ico-organization:before { content: "\ea1c"; }
+.ico-connection:before { content: "\ea1d"; }
+.ico-people:before { content: "\ea1e"; }
+.ico-fingerprint:before { content: "\ea1f"; }
+.ico-user-star:before { content: "\ea20"; }
+.ico-user-heart:before { content: "\ea21"; }
+.ico-user-gear:before { content: "\ea22"; }
+.ico-edit:before { content: "\ea23"; }
+.ico-calendar-gear:before { content: "\ea24"; }
+.ico-calendar-status:before { content: "\ea25"; }
+.ico-dashboard:before { content: "\ea26"; }
+.ico-assign-db:before { content: "\ea27"; }
+.ico-calendar-fill:before { content: "\ea28"; }

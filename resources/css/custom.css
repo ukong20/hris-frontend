@@ -7,12 +7,12 @@
     --font-poppins: "Poppins", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
 
-    --font-weight-light: 300;
-    --font-weight-normal: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-black: 900;
 
     --text-xxlarge: 67px;
     --text-xlarge: 50px;

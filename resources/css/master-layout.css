@@ -6,6 +6,26 @@
     }
 
     body {
-        @apply md:overflow-x-hidden overflow-y-scroll bg-light-4;
+        @apply md:overflow-x-hidden overflow-y-auto bg-light-4;
+    }
+
+    .main-navbar {
+        @apply flex flex-row font-montserrat relative text-dark-2 font-medium p-5 top-0 left-0 w-full h-16 bg-light-3 shadow-md z-50;
+    }
+
+    .nav-container {
+        @apply flex flex-row items-center justify-between w-full h-full;
+    }
+
+    .nav-left .menu-list {
+        @apply hidden md:flex flex-row items-center justify-center gap-5 lg:gap-10;
+    }
+
+    .nav-left .menu-list .menu-item a {
+        @apply flex flex-row items-baseline justify-center gap-2 text-tiny leading-25 p-4 hover:text-blue-2 transition duration-300;
+    }
+
+    .nav-left .menu-list .menu-item a i.ico {
+        @apply relative top-2 -translate-y-1.25
     }
 }

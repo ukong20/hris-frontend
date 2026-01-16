@@ -1,0 +1,54 @@
+@font-face {
+font-family: 'fonticon';
+src: url("../fonts/fonticon.ttf") format("truetype"),
+url("../fonts/fonticon.eot") format("embedded-opentype"),
+url("../fonts/fonticon.woff") format("woff");
+}
+.ico {
+    font-family: 'fonticon' !important;
+    font-size: 18px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.users-add:before { content: "\ea01"; }
+.case:before { content: "\ea02"; }
+.info:before { content: "\ea03"; }
+.sun:before { content: "\ea04"; }
+.bell:before { content: "\ea05"; }
+.cake:before { content: "\ea06"; }
+.popper:before { content: "\ea07"; }
+.hour-glass:before { content: "\ea08"; }
+.user-add:before { content: "\ea09"; }
+.note:before { content: "\ea0a"; }
+.support:before { content: "\ea0b"; }
+.message:before { content: "\ea0c"; }
+.calendar-time:before { content: "\ea0d"; }
+.clock-cancel:before { content: "\ea0e"; }
+.credits:before { content: "\ea0f"; }
+.clock-edit:before { content: "\ea10"; }
+.calendar:before { content: "\ea11"; }
+.eye:before { content: "\ea12"; }
+.delete:before { content: "\ea13"; }
+.plus:before { content: "\ea14"; }
+.hexagon:before { content: "\ea15"; }
+.user:before { content: "\ea16"; }
+.user-status:before { content: "\ea17"; }
+.user-search:before { content: "\ea18"; }
+.user-profile:before { content: "\ea19"; }
+.time-off:before { content: "\ea1a"; }
+.calendar-heart:before { content: "\ea1b"; }
+.organization:before { content: "\ea1c"; }
+.connection:before { content: "\ea1d"; }
+.people:before { content: "\ea1e"; }
+.fingerprint:before { content: "\ea1f"; }
+.user-star:before { content: "\ea20"; }
+.user-heart:before { content: "\ea21"; }
+.user-gear:before { content: "\ea22"; }
+.edit:before { content: "\ea23"; }
+.calendar-gear:before { content: "\ea24"; }
+.calendar-status:before { content: "\ea25"; }
+.dashboard:before { content: "\ea26"; }
+.assign-db:before { content: "\ea27"; }
+.calendar-fill:before { content: "\ea28"; }
